@@ -1,14 +1,20 @@
-import Parallax from './components/Parallax'
-import Carousel from './components/Carousel'
+import { useState } from "react"
+import Parallax from "./components/Parallax"
+import Carousel from "./components/Carousel"
+import images from "./utils/images"
 
 function App() {
+  const [actualImageSet, setActualImageSet] = useState(0)
+
+  const changeActualImageSet = (set) => {
+    setActualImageSet(set)
+  }
+
   return (
-    <>
-    <div className='container flex flex-col mx-auto'>
-      <Parallax />
-      <Carousel />
-    </div>
-    </>
+    <main className="container flex flex-col mx-auto">
+      <Parallax images={images[actualImageSet].parallaxImages} />
+      <Carousel onCarouselPhotoClick={changeActualImageSet} />
+    </main>
   )
 }
 
