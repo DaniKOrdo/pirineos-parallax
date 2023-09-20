@@ -1,24 +1,21 @@
 import Atropos from "atropos/react";
 
-export default function App() {
+export default function Parallax({ images }) {
   return (
-    <div className="pt-12">
+    <div className="pt-12 w-3/4 mx-auto">
       <Atropos
-        className="atropos atropos-header w-full atropos-rotate-touch-scroll-y"
+        className="atropos atropos-header atropos-rotate-touch-scroll-y"
         activeOffset={40}
         shadowScale={1.1}
-        highlight={true}
       >
-        <img
-          className="atropos-header-spacer"
-          src="src/images/img-a-6.webp"
-          data-atropos-offset="-4.5"
-        />
-        <img src="src/images/img-a-5.webp" data-atropos-offset="-3.5" />
-        <img src="src/images/img-a-4.webp" data-atropos-offset="-2.5" />
-        <img src="src/images/img-a-3.webp" data-atropos-offset="-2" />
-        <img src="src/images/img-a-2.webp" data-atropos-offset="-1" />
-        <img src="src/images/img-a-1.webp" data-atropos-offset="1" />
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image.url}
+            alt={`Imagen ${index + 1}`}
+            data-atropos-offset={image.offset}
+          />
+        ))}
       </Atropos>
     </div>
   );
