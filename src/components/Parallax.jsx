@@ -2,7 +2,7 @@ import Atropos from "atropos/react";
 
 export default function Parallax({ images }) {
   return (
-    <div className="pt-12 w-3/4 mx-auto">
+    <picture className="w-11/12 mx-auto px-2">
       <Atropos
         className="atropos atropos-header atropos-rotate-touch-scroll-y"
         activeOffset={40}
@@ -17,6 +17,6 @@ export default function Parallax({ images }) {
           />
         ))}
       </Atropos>
-    </div>
+    </picture>
   );
 }
