@@ -1,16 +1,20 @@
-import images from '../utils/images'
+import images from "../utils/images";
 
-export default function Carousel({ onCarouselPhotoClick }) {
+export default function Carousel({ onCarouselPhotoClick, actualImage }) {
   return (
-    <div className="flex justify-center mx-auto gap-3 pt-8 md:pt-16 h-32 w-32">
-      {images.fullImages.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Imagen ${index + 1}`}
-          onClick={() => onCarouselPhotoClick(index)}
-        />
-      ))}
-    </div>
+    <section className="flex items-center xl:justify-center mx-auto p-3 gap-4 mt-8 md:mt-16 w-11/12 overflow-y-hidden overflow-x-visible">
+      {images.fullImages.map((image, index) => {
+        const opacity = actualImage !== index ? "opacity-50 hover:opacity-90" : "";
+        return (
+          <img
+            key={index}
+            src={image}
+            className={`h-24 md:h-full object-cover aspect-video cursor-pointer rounded shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 ${opacity}`}
+            alt={`Imagen ${index + 1}`}
+            onClick={() => onCarouselPhotoClick(index)}
+          />
+        );
+      })}
+    </section>
   );
 }
