@@ -2,6 +2,7 @@ import { useState } from "react"
 import Header from "./components/Header"
 import Parallax from "./components/Parallax"
 import Carousel from "./components/Carousel"
+import Footer from "./components/Footer"
 import images from "./utils/images"
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <Header />
       <Parallax images={images[actualImageSet].parallaxImages} />
       <Carousel actualImage={actualImageSet} onCarouselPhotoClick={changeActualImageSet} />
+      <Footer />
     </main>
   )
 }
