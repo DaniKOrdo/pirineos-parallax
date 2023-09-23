@@ -4,7 +4,6 @@ const images = {
     "src/images/piri-2.webp",
     "src/images/piri-3.webp",
     "src/images/piri-4.webp",
-    "src/images/piri-5.webp",
   ],
   0: {
     parallaxImages: [
@@ -41,12 +40,12 @@ const images = {
   },
   3: {
     parallaxImages: [
-      { url: "src/images/piri-4.webp", offset: "0" }
-    ],
-  },
-  4: {
-    parallaxImages: [
-      { url: "src/images/piri-5.webp", offset: "0" }
+      { url: "src/images/d-6.webp", offset: "-4.5" },
+      { url: "src/images/d-5.webp", offset: "-3.5" },
+      { url: "src/images/d-4.webp", offset: "-2.5" },
+      { url: "src/images/d-3.webp", offset: "-2" },
+      { url: "src/images/d-2.webp", offset: "-1" },
+      { url: "src/images/d-1.webp", offset: "1" },
     ],
   },
 }
