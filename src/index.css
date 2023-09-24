@@ -56,7 +56,6 @@
   -o-object-fit: contain;
   object-fit: contain;
   display: block;
-  z-index: 1;
   transform-style: preserve-3d;
   pointer-events: none;
   max-width: none;
