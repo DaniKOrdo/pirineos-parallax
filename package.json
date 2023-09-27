@@ -12,7 +12,8 @@
   "dependencies": {
     "atropos": "^2.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-progressive-graceful-image": "^0.7.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
