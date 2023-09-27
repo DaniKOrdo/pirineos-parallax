@@ -6,6 +6,7 @@ const images = {
     "img/piri-4.webp",
   ],
   0: {
+    placeHolder: 'img/ph-a.webp',
     parallaxImages: [
       { url: "img/a-6.webp", offset: "-4.5" },
       { url: "img/a-5.webp", offset: "-3.5" },
@@ -14,12 +15,9 @@ const images = {
       { url: "img/a-2.webp", offset: "-1" },
       { url: "img/a-1.webp", offset: "1" },
     ],
-    infoPhoto: {
-      location: "test",
-      description: "test desct"
-    }
   },
   1: {
+    placeHolder: 'img/ph-b.webp',
     parallaxImages: [
       { url: "img/b-6.webp", offset: "-4.5" },
       { url: "img/b-5.webp", offset: "-3.5" },
@@ -30,6 +28,7 @@ const images = {
     ],
   },
   2: {
+    placeHolder: 'img/ph-c.webp',
     parallaxImages: [
       { url: "img/c-5.webp", offset: "-3.5" },
       { url: "img/c-4.webp", offset: "-2.5" },
@@ -39,6 +38,7 @@ const images = {
     ],
   },
   3: {
+    placeHolder: 'img/ph-d.webp',
     parallaxImages: [
       { url: "img/d-6.webp", offset: "-4.5" },
       { url: "img/d-5.webp", offset: "-3.5" },
