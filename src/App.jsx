@@ -15,7 +15,7 @@ export default function App() {
   return (
     <main className="container flex flex-col justify-center items-center mx-auto my-auto">
       <Header />
-      <Parallax images={images[actualImageSet].parallaxImages} />
+      <Parallax images={images[actualImageSet].parallaxImages} placeHolder={images[actualImageSet].placeHolder} />
       <Carousel actualImage={actualImageSet} onCarouselPhotoClick={changeActualImageSet} />
       <Footer />
     </main>
