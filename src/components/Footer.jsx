@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 p-4 text-center text-slate-300">
+    <footer className="fixed bottom-0 p-4 text-center text-slate-300 w-64 mx-auto">
       Created with ♥️ by {" "}
       <a
         href="https://danik.dev/"
